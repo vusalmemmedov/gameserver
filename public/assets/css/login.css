@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.841);
+  font-family: "Ubuntu", sans-serif;
+}
+
+#header .header_all .navbar {
+  width: 100%;
+  height: 108px;
+  border-radius: 40px;
+  padding: 20px 20px 20px 10px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.633);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header_all .navbar .active {
+  color: rgba(4, 217, 241, 0.91);
+}
+#header .header_all .navbar .logo {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#header .header_all .navbar .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#header .header_all .navbar .logo h2 {
+  display: flex;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+#header .header_all .navbar .logo h2 h3 {
+  display: flex;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+#header .header_all .navbar .link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#header .header_all .navbar .link a {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  transition: 0.4s;
+}
+#header .header_all .navbar .link a:hover {
+  color: rgba(4, 217, 241, 0.91);
+}
+#header .header_all .navbar .link .slash svg {
+  width: 28px;
+  height: 59px;
+}
+#header .header_all .navbar .link .userpanel {
+  border: 1px solid rgba(4, 217, 241, 0.91);
+  padding: 10px;
+  border-radius: 50px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#header .header_all .navbar .link .userpanel a {
+  fill: rgba(4, 217, 241, 0.91);
+}
+#header .header_all .navbar .link .userpanel:hover {
+  border: 1px solid #fff;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: rgba(4, 217, 241, 0.91);
+}
+#header .header_all .navbar .link .userpanel:hover a {
+  fill: #fff;
+}
+
+#main .main_all .signin {
+  width: 400px;
+  background: #222;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+  margin: auto;
+  margin-top: 70px;
+}
+#main .main_all .signin .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+#main .main_all .signin .content h2 {
+  font-size: 2em;
+  color: rgba(4, 217, 241, 0.91);
+  text-transform: uppercase;
+}
+#main .main_all .signin .content .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#main .main_all .signin .content .form .inputBox {
+  position: relative;
+  width: 100%;
+}
+#main .main_all .signin .content .form .inputBox input {
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+#main .main_all .signin .content .form .inputBox i {
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+}
+#main .main_all .signin .content .form .inputBox input:focus ~ i,
+#main .main_all .signin .content .form .inputBox input:valid ~ i {
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #fff;
+}
+#main .main_all .signin .content .form .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#main .main_all .signin .content .form .links a {
+  color: rgba(17, 255, 0, 0.803);
+  text-decoration: none;
+}
+#main .main_all .signin .content .form .links:nth-child(2) {
+  color: rgba(4, 217, 241, 0.91);
+  font-weight: 600;
+}
+#main .main_all .signin .content .form .inputBox input[type=submit] {
+  padding: 10px;
+  background: rgba(4, 217, 241, 0.91);
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+#main .main_all .signin .content .form .inputBox input[type=submit]:active {
+  opacity: 0.6;
+}
+#main .main_all .signin .content .form .inputBox input[type=submit]:focus {
+  border: 2px solid rgba(4, 217, 241, 0.91);
+}
+#main .main_all .signin .content .form .checkBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#main .main_all .signin .content .form .checkBox input {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background: #333;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#main .main_all .signin .content .form .checkBox input:checked + a p {
+  color: rgba(17, 255, 0, 0.803);
+}
+#main .main_all .signin .content .form .checkBox a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.4s;
+  display: flex;
+  gap: 5px;
+}
+#main .main_all .signin .content .form .checkBox a p {
+  margin: 0;
+  padding: 0;
+  color: #aaa;
+  font-size: 1em;
+  transition: color 0.4s;
+}/*# sourceMappingURL=login.css.map */
